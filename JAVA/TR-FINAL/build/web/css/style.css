@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{list-style: none;}
+a{text-decoration: none;}
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+#header{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+.boton{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: #e62e2e;
+}
+.line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.2s linear;
+}
+.active .line:nth-child(1){
+    transform: translateY(10px) rotate(135deg) ;
+}
+.active .line:nth-child(2){
+    transform: scale(0);
+}
+.active .line:nth-child(3){
+    transform:  translateY(-10px) rotate(-135deg);
+}
+.nav-bar{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    padding: 10px;
+    z-index: -1;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    transition: 0.2s ease-in;
+}
+.visible .nav-bar{top: 65px;}
+.list-item{
+    padding: 10px;
+    color: #fff;
+}
+.list-item:hover{
+    cursor: pointer;
+    background-color: #e62e2e;
+}
+.nav-bar ul li{
+    color: #000;
+    transition: 0.1s ease-in;
+}
+.visible .nav-bar ul li{
+    color: #fff;
+    transition: 0.275s ease-in;
+}
+#container{
+    z-index: -20;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.button{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e62e2e;
+}
+.button i{
+    position: relative;
+    left: 0;
+    transition: 0.2s linear;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #c42525;
+}
+.button:hover i{left:3.5px;}

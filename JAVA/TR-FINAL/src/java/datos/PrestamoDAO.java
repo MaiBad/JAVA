@@ -44,7 +44,7 @@ public class PrestamoDAO {
         }
         return prestamos;
     }
-    //METODO INSERTAR LIBRO
+    //METODO INSERTAR PRESTAMO
     public int insertar(Prestamo prestamo) {
         Connection con = null;
         PreparedStatement stmt = null;

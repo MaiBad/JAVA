@@ -19,7 +19,7 @@ public class AlumnoDAO {
 
     private static final String SQL_DELETE = "DELETE FROM alumno WHERE id_alumno=?";
 
-    //METODO LISTAR LIBROS
+    //METODO LISTAR ALUMNOS
     public List<Alumno> listar() {
         Connection con = null;
         PreparedStatement stmt = null;
@@ -51,7 +51,7 @@ public class AlumnoDAO {
         return alumnos;
     }
 
-    //METODO ENCONTRAR LIBRO
+    //METODO ENCONTRAR ALUMNO
     public Alumno encontrar(Alumno alumno) {
         Connection con = null;
         PreparedStatement stmt = null;
@@ -83,7 +83,7 @@ public class AlumnoDAO {
         }
         return alumno;
     }
-    //METODO INSERTAR LIBRO
+    //METODO INSERTAR ALUMNO
     public int insertar(Alumno alumno){
         Connection con = null;
         PreparedStatement stmt = null;
@@ -105,7 +105,7 @@ public class AlumnoDAO {
         }
         return registros;
     }
-    //METODO ACTUALIZAR LIBRO
+    //METODO ACTUALIZAR ALUMNO
     public int actualizar(Alumno alumno){
         Connection con = null;
         PreparedStatement stmt = null;
@@ -127,7 +127,7 @@ public class AlumnoDAO {
         }
         return registros;
     }
-    //METODO ELIMINAR LIBRO
+    //METODO ELIMINAR ALUMNO
     public int eliminar(Alumno alumno){
         Connection con = null;
         PreparedStatement stmt = null;
